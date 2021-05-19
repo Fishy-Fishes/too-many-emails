@@ -4,4 +4,4 @@
 
 
 Rust email cli
-Attempting to do this :)
+Attempting to do this :p
