@@ -7,3 +7,5 @@ Too many emails aims to be an email client based in the cli, written in rust.
 ## Inspiration
 - lazygit
 - mangadesk
+- vim
+- ncspot
