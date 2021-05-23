@@ -2,7 +2,7 @@
 
 name: Release
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Runs action on release creation.
   release:
@@ -14,11 +14,11 @@ env:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "dist-linux"
-  dist-linux: 
+  dist-linux:
     name: Releases to linux
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
@@ -26,7 +26,7 @@ jobs:
       run: cargo build --verbose --release
     - name: Mark executable
       run: chmod +x ./target/release/too_many_emails
-    - name: Upload      
+    - name: Upload
       uses: actions/upload-release-asset@v1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,18 +35,18 @@ jobs:
         asset_path: ./target/release/too_many_emails
         asset_name: too-many-emails-linux
         asset_content_type: binary/octet-stream
-        
+
   # This workflow contains a single job called "dist-linux"
   dist-windows:
     name: Releases to windows
     # The type of runner that the job will run on
     runs-on: windows-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job 
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose --release
-    - name: Upload      
+    - name: Upload
       uses: actions/upload-release-asset@v1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -56,11 +56,11 @@ jobs:
         asset_name: too-many-emails-windows.exe
         asset_content_type: binary/octet-stream
 
-  dist-macos: 
+  dist-macos:
     name: Releases to macOS
     # The type of runner that the job will run on
     runs-on: macOS-latest
-    
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
@@ -68,7 +68,7 @@ jobs:
       run: cargo build --verbose --release
     - name: Mark executable
       run: chmod +x ./target/release/too_many_emails
-    - name: Upload      
+    - name: Upload
       uses: actions/upload-release-asset@v1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
