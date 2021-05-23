@@ -44,7 +44,8 @@ jobs:
     name: Releases to windows
     # The type of runner that the job will run on
     runs-on: windows-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job steps:
+    # Steps represent a sequence of tasks that will be executed as part of the job 
+    steps:
     - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose --release
