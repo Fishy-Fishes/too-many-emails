@@ -1,5 +1,5 @@
 # too-many-emails
-[![Fishes](https://github.com/Fishy-Fishes/too_many_emails/actions/workflows/rust.yml/badge.svg)](https://github.com/Fishy-Fishes/too_many_emails/actions/workflows/rust.yml)
+[![CI](https://github.com/Fishy-Fishes/too_many_emails/actions/workflows/ci.yml/badge.svg)](https://github.com/Fishy-Fishes/too_many_emails/actions/workflows/ci.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/fishy-fishes/too_many_emails/badge)](https://www.codefactor.io/repository/github/fishy-fishes/too_many_emails)
 
 # What is it?
