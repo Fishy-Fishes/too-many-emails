@@ -8,3 +8,7 @@ edition = "2018"
 
 [dependencies]
 tui = { vesion = "0.15.0", default-features = false, features = ["crossterm"] }
+tokio = { version = "1", features = ["full"] }
+argh = "0.1"
+tokio-rustls = "0.22.0"
+webpki-roots = "0.21"
