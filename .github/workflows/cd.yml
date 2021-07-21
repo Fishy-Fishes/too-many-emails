@@ -2,8 +2,9 @@ name: Publish on Github
 
 on:
   push:
-    branches:
-    - release
+    tags:
+    - "*"
+  workflow_dispatch:
 
 jobs:
   create-release:
