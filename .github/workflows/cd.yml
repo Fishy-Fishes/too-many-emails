@@ -1,9 +1,10 @@
-name: Publish on Github
+name: Continuous Deployment
 
 on:
   push:
-    branches:
-    - release
+    tags:
+    - "*"
+  workflow_dispatch:
 
 jobs:
   create-release:
