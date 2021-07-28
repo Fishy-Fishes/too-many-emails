@@ -13,3 +13,6 @@ Cargo.lock
 # Added by cargo
 
 /target
+
+imap_lib/target/
+smtp_lib/target/
