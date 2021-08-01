@@ -1,5 +1,5 @@
 [package]
-name = "imap_lib"
+name = "imap"
 version = "0.1.0"
 authors = ["Swords <https://github.com/SleepySwords>", "XCodeBoi <https://github.com/XcodeBoi>"]
 edition = "2018"

@@ -14,5 +14,7 @@ Cargo.lock
 
 /target
 
-imap_lib/target/
-smtp_lib/target/
+imap/target/
+imap/Cargo.lock
+smtp/target/
+smtp/Cargo.lock
