@@ -1,3 +1,8 @@
 fn main() {
-    println!("Hello world!");
+    println!(r#"Hello world!"#);
+    hey();
+}
+
+fn hey() {
+    println!("heyoo!");
 }

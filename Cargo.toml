@@ -8,5 +8,5 @@ edition = "2018"
 
 [dependencies]
 tui = { vesion = "0.15.0", default-features = false, features = ["crossterm"] }
-imap_lib = { path = "imap_lib" }
-smtp_lib = { path = "smtp_lib" }
+imap = { path = "imap" }
+smtp = { path = "smtp" }
