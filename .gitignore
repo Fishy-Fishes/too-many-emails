@@ -13,5 +13,7 @@ Cargo.lock
 # Added by cargo
 
 /target
-
-/imap/target
+imap/target/
+imap/Cargo.lock
+smtp/target/
+smtp/Cargo.lock

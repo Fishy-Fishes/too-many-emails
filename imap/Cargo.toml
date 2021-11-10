@@ -1,5 +1,5 @@
 [package]
-name = "too_many_emails"
+name = "imap"
 version = "0.1.0"
 authors = ["Swords <https://github.com/SleepySwords>", "XCodeBoi <https://github.com/XcodeBoi>"]
 edition = "2018"
@@ -7,6 +7,7 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tui = { version = "0.15.0", default-features = false, features = ["crossterm"] }
-imap = { path = "./imap" }
-smtp = { path = "./smtp" }
+tokio = { version = "1", features = ["full"] }
+argh = "0.1"
+tokio-rustls = "0.22.0"
+webpki-roots = "0.21"
